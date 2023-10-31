@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tVm-xF-lW8">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LootAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sr8-zg-Zps">
+                                <rect key="frame" x="179" y="749" width="56" height="39"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                <state key="normal" title="Start"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LootAR_Logotipo" translatesAutoresizingMaskIntoConstraints="NO" id="9Px-rf-0lk">
+                                <rect key="frame" x="0.0" y="154" width="414" height="209"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9Px-rf-0lk" secondAttribute="height" multiplier="414:209" id="T5J-CV-qgk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Px-rf-0lk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3ID-Qw-x5k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sr8-zg-Zps" secondAttribute="bottom" constant="25" id="Agy-Lm-1oh"/>
+                            <constraint firstItem="9Px-rf-0lk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="CQW-Vt-ms4"/>
+                            <constraint firstItem="sr8-zg-Zps" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="We7-4L-fPP"/>
+                            <constraint firstItem="9Px-rf-0lk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WlR-8E-ulL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Game" id="17A-Ql-PWJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="-121"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="83K-Y9-cfI">
+            <objects>
+                <viewController id="cpB-YJ-NsN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gRb-SE-YW8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Should be something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8x-Z4-WQA">
+                                <rect key="frame" x="126" y="438" width="163" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XEY-18-7FH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="gox-1j-Tam"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JrP-eC-Gtw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="545"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UfB-ug-pxB">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tVm-xF-lW8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rBI-x0-Tcb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Mna-ZD-d74"/>
+                        <segue destination="cpB-YJ-NsN" kind="relationship" relationship="viewControllers" id="fOL-Hy-D3U"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2FF-VB-HhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LootAR_Logotipo" width="800" height="800"/>
+    </resources>
+</document>
